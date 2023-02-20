@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -72,9 +74,8 @@ public class Main {
         //kartų kintamasis i turėjo porinę reikšmę;
 
         int porineReiksme = 0;
-        int skaiciai = 21;
 
-        for (int i = 0; i < skaiciai; i++) {
+        for (int i = 0; i < 21; i++) {
 
             if (i % 2 == 0) {
                 System.out.println(i);
@@ -98,7 +99,7 @@ public class Main {
             }
         }
 
-        System.out.println( "Augalu pavadinimai trumpesni nei 5 raides: " + uzd1);
+        System.out.println("Augalu pavadinimai trumpesni nei 5 raides: " + uzd1);
 
         {
             if (augalai.length > 7) {
@@ -106,8 +107,7 @@ public class Main {
                 uzd2++;
             }
         }
-            System.out.println("Augalu pavadinimai ilgesni nei 7 raides: " + uzd2);
-
+        System.out.println("Augalu pavadinimai ilgesni nei 7 raides: " + uzd2);
 
 
         System.out.println("---------------10.uzd.-----------------");
@@ -116,66 +116,42 @@ public class Main {
         //ilgio)
 
 
-
         int count = 0;
-        for (int i = 0; i < 10 ; i++) {
-        if ((augalai[i].length() > 5) && (augalai[i].length() < 10)) {
-            count++;
+        for (int i = 0; i < 10; i++) {
+            if ((augalai[i].length() > 5) && (augalai[i].length() < 10)) {
+                count++;
             }
         }
-        System.out.println("Zodziu ilgesniu nei 5 raides ir trumpesniu nei 10 raides suma: "+ count);
+        System.out.println("Zodziu, ilgesniu nei 5 raides ir trumpesniu nei 10 raides, suma: " + count);
 
 
         System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 
         System.out.println("---------------1.1.uzd.-----------------");
 
-        
+        int count1 = 0;
+
+        for (int i = 0; i < 301; i++) {
+            System.out.println(i);
+            System.out.println();
+            {
+                if (i > 274)
+                    System.out.println(" [" + i + "]");
+
+            }
+        }
 
 
+//        System.out.println("---------------1.2.uzd.-----------------");
+//        for (int i = 1; i < 3000; i++) {
+//            if (i % 7 == 0) {
+//                System.out.println(i);
+//                continue;
+//
+//            }
+//        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("---------------1.3.uzd.-----------------");
 
 
 
@@ -199,3 +175,87 @@ public class Main {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
